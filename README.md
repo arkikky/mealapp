@@ -1,8 +1,11 @@
 ![Mealapp](https://fybcklahukimaqfaepry.supabase.co/storage/v1/object/public/Thumbnails/mealapp/mealappShareLink.jpg)
 
-# Next.Js Starter Template
+# Mealapp Template
 
-Next.Js Starter Template, Next.js provides a variety of starter templates that can be used as a basis for your Next.js project. This starter template helps you get started quickly and includes commonly used initial configurations.
+Mealapp makes it easy to discover new recipes and cook delicious meals in no time. With our extensive collection of recipes, you'll never run out of ideas for your next meal.
+
+# Figma
+[Figma Mealapp](https://www.figma.com/file/YtndzYTP4q1wVd55l2kUnz/mealapp?type=design&node-id=1%3A145&mode=design&t=zgQmzXFgvKN1ogaj-1)
 
 ## Getting Started
 This project was built using [Next.js](https://nextjs.org/), Tailwind CSS to create interactive and responsive animations.
