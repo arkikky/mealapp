@@ -1,4 +1,4 @@
-![Ethereum Sea Logo](https://fybcklahukimaqfaepry.supabase.co/storage/v1/object/public/Thumbnails/NextJs%20-%20Starter/nextjs_ThumbnailsApp_ShareLink.jpg)
+![Ethereum Sea Logo]([https://fybcklahukimaqfaepry.supabase.co/storage/v1/object/public/Thumbnails/NextJs%20-%20Starter/nextjs_ThumbnailsApp_ShareLink.jpg](https://fybcklahukimaqfaepry.supabase.co/storage/v1/object/public/Thumbnails/mealapp/mealappShareLink.jpg))
 
 # Next.Js Starter Template
 
