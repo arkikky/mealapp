@@ -1,0 +1,78 @@
+/* Hamburger */
+.hmbrgrStairs {
+  @apply rounded-md;
+  @apply h-8 sm:h-10 w-8 sm:w-10;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine {
+  @apply bg-black-900;
+  @apply mb-1 last:mb-0;
+  @apply h-0.5 w-2.5;
+
+  @apply opacity-100 visible;
+  @apply transition duration-300 ease-in-out;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(1) {
+  @apply ml-2;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(2) {
+  @apply mx-auto;
+}
+
+.hmbrgrStairs .hmbrgrStairsLine:nth-child(3) {
+  @apply mr-2;
+}
+
+.hmbrgrStairs.deactive .hmbrgrStairsLine {
+  @apply first:rotate-[-45deg] first:translate-y-1.5 first:translate-x-0 first:ml-0;
+  @apply last:rotate-[43deg] last:-translate-y-1.5 last:translate-x-0 last:mr-0;
+  @apply w-[17px];
+}
+
+.hmbrgrStairs.deactive .hmbrgrStairsLine:nth-child(2) {
+  @apply opacity-0 invisible;
+}
+
+.mealappNavbar .mealappNavbarMainMenu {
+  @apply bg-white sm:bg-transparent;
+  @apply absolute sm:relative top-full bottom-0 sm:inset-y-0 inset-x-0;
+  @apply pt-4 pb-2 sm:py-0 xl:py-2 px-4 sm:px-0;
+  @apply min-h-screen sm:min-h-max;
+
+  @apply transition-all duration-[0.3s] ease-in-out;
+
+  backface-visibility: hidden;
+  @apply invisible opacity-0;
+}
+
+@screen sm {
+  .mealappNavbar .mealappNavbarMainMenu {
+    backface-visibility: visible;
+    @apply visible opacity-100;
+  }
+}
+
+.mealappNavbar.active .mealappNavbarMainMenu.active {
+  backface-visibility: visible;
+  @apply visible opacity-100;
+}
+
+.mealappNavbar .mealappNavbarMainMenu ul.mealappNavbarMenu {
+  @apply flex flex-col sm:flex-row;
+}
+
+.mealappNavbar .mealappNavbarMainMenu ul.mealappNavbarMenu > li {
+  @apply flex relative;
+  @apply mr-0 sm:mr-6 last:mr-0;
+}
+
+.mealappNavbar .mealappNavbarMainMenu ul.mealappNavbarMenu > li a {
+  @apply flex flex-col items-start lg:items-center justify-start lg:justify-center;
+  @apply text-black-900 font-poppins text-xl sm:text-base font-normal leading-inherit capitalize hover:underline py-6 px-0;
+  @apply outline-none focus-visible:outline-none;
+  @apply w-full lg:w-max;
+
+  @apply transition duration-300 ease-in-out;
+}

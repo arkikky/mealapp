@@ -1,0 +1,30 @@
+{
+  "name": "mealapp",
+  "version": "0.24",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "next": "14.0.3",
+    "next-sitemap": "^4.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-html-parser": "^2.0.2",
+    "react-player": "^2.14.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.3.0"
+  },
+  "author": "Ark Ikky",
+  "license": "MIT"
+}

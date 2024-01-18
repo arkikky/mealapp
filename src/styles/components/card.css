@@ -1,0 +1,12 @@
+/* Card */
+.crdMealappMnuCatgry {
+  @apply rounded-[14px];
+  @apply overflow-hidden;
+}
+
+.crdMealappMnuCatgry::before {
+  @apply content-[''];
+  @apply bg-black-900/50;
+  @apply absolute inset-y-0 inset-x-0;
+  @apply z-px;
+}

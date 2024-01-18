@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://meal-apps.vercel.app
+
+# Sitemaps
+Sitemap: https://meal-apps.vercel.app/sitemap.xml
+Sitemap: https://meal-apps.vercel.appserver-sitemap.xml

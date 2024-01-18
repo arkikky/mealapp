@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white;
+  @apply text-black-900 font-poppins text-base font-normal;
+}
+
+body::-webkit-scrollbar {
+  @apply w-2;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-[#EAF0F2];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#AAB4C4] border-none rounded-full;
+}
+
+a {
+  @apply outline-none focus:outline-none;
+}
+
+/* Menu */
+@import url("./components/menu");
+
+/* Card */
+@import url("./components/card");

@@ -1,0 +1,17 @@
+{
+  "name": "Mealapp",
+  "short_name": "Mealapp",
+  "description": "Mealapp makes it easy to discover new recipes and cook delicious meals in no time. With our extensive collection of recipes, you'll never run out of ideas for your next meal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
