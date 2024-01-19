@@ -108,7 +108,7 @@ const Home = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-full lg:col-span-6 mt-8 pl-0 lg:pl-11">
+              <div className="col-span-full lg:col-span-6 mt-8 sm:mt-0 pl-0 lg:pl-11">
                 <div>
                   <Image
                     className="rounded-[20px] overflow-hidden object-cover object-center h-[495px] lg:h-[651px] w-full"
