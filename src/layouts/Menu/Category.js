@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const MenuCategory = ({ categories, meals }) => {
+const MenuCategory = ({
+  categories,
+  meals,
+  config = {
+    label: "xl",
+  },
+}) => {
   const [isMenuCategory, setMenuCategory] = useState({
     menuCategories: categories,
     menuMeals: meals,
@@ -55,7 +61,13 @@ const MenuCategory = ({ categories, meals }) => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center absolute inset-y-0 inset-x-0 px-1 sm:px-5 z-[4]">
-                <h3 className="text-white font-poppins text-base sm:text-lg xl:text-2xl font-semibold text-center uppercase">
+                <h3
+                  className={`text-white font-poppins ${
+                    config.label === "xl"
+                      ? "text-base sm:text-lg xl:text-2xl"
+                      : "text-base sm:text-lg"
+                  } font-semibold text-center uppercase`}
+                >
                   {gtRslt.strMeal}
                 </h3>
               </div>

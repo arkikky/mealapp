@@ -64,7 +64,7 @@ const Navbar = () => {
               />
             </Link>
             {/* @Button Nav (Toggle) */}
-            <div className="flex flex-row items-center justify-end">
+            <div className="flex sm:hidden flex-row items-center justify-end">
               <button
                 ref={isNavBtnToggle}
                 className={`hmbrgrStairs flex lg:hidden flex-col items-center justify-center border border-solid border-white outline-none focus:outline-none -mr-1 lg:mr-0 ${

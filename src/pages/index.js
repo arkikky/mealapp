@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import getConfig from "next/config";
-import Image from "next/image";
 import Head from "next/head";
+import Image from "next/image";
 
 // @Get .config
 const { publicRuntimeConfig } = getConfig();
@@ -62,9 +62,73 @@ const Home = (props) => {
       </Head>
 
       <main className="relative mt-[122px]">
+        {/* @header */}
+        <header>
+          <Container>
+            <div className="supports-grid:grid grid-cols-4 sm:grid-cols-12 lg:grid-cols-12 gap-y-2 sm:gap-y-4 lg:gap-y-6 gap-x-2 sm:gap-x-4 lg:gap-x-6 relative mt-6 sm:mt-8">
+              <div className="col-span-full lg:col-span-6">
+                <div className="flex flex-col">
+                  <div className="flex flex-col">
+                    <span className="text-black-900 font-poppins text-lg font-normal">
+                      Discover something new and exciting!
+                    </span>
+                    <h1 className="text-black-900 font-poppins text-[58px] leading-[72px] font-bold mt-3">
+                      Find Delicious Recipes in Minutes.
+                    </h1>
+                  </div>
+                  <p className="text-black-900 font-poppins text-lg font-normal mt-8">
+                    Mealapp makes it easy to discover new recipes and cook
+                    delicious meals in no time. With our extensive collection of
+                    recipes, you'll never run out of ideas for your next meal.
+                  </p>
+                  <div className="inline-flex flex-col sm:flex-row gap-y-6 gap-x-6 mt-8">
+                    <div className="flex-1 flex flex-col">
+                      <h2 className="text-black-900 font-poppins text-xl font-semibold">
+                        Easy Cooking
+                      </h2>
+                      <p className="text-black-900 font-poppins text-lg mt-4.5">
+                        Explore a wide variety of recipes from around the world
+                        and unleash your inner chef.
+                      </p>
+                    </div>
+                    <div className="flex-1 flex flex-col">
+                      <h2 className="text-black-900 font-poppins text-xl font-semibold">
+                        Quick Results
+                      </h2>
+                      <p className="text-black-900 font-poppins text-lg mt-4.5">
+                        Get access to step-by-step instructions and create
+                        delicious meals in no time.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col mt-11">
+                    <button className="inline-flex flex-col items-center justify-center rounded-xl bg-black-900 text-white font-poppins text-base font-semibold text-center py-6 px-8 w-full sm:w-[235px]">
+                      Get Started
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-full lg:col-span-6 mt-8 pl-0 lg:pl-11">
+                <div>
+                  <Image
+                    className="rounded-[20px] overflow-hidden object-cover object-center h-[495px] lg:h-[651px] w-full"
+                    src={"/assets/images/mealappHeader.jpg"}
+                    alt={`Mealapp (Header)`}
+                    height={2000}
+                    width={1335}
+                    loading="lazy"
+                    quality="87"
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </header>
+
+        {/* @quote */}
         <section className="overflow-hidden xl:overflow-[none] relative mt-[122px] mb-28 xl:mb-[142px]">
           <Container>
-            <blockquote className="relative mx-auto w-full max-w-[926px]">
+            <blockquote className="relative mt-8 mx-auto w-full max-w-[926px]">
               <svg
                 className="text-gray-100 absolute -top-6 -start-8 h-16 w-16"
                 viewBox="0 0 16 16"

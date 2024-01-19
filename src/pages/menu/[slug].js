@@ -131,7 +131,7 @@ const MenuDetail = (props) => {
           <BannerHeroLabelSection title={props.detail} />
 
           {/* @menuCategory */}
-          <MenuCategory {...isMenuCategory} />
+          <MenuCategory {...isMenuCategory} config={{ label: "sm" }} />
 
           {/* @bannerSubscribe */}
           <BannerSubscribe />
